@@ -1,8 +1,8 @@
-data_path='~/BSDS300/images/'
+data_path='./Noise2Noise-Cryo-EM-image-denoising/images/'
 test_path='train/'
 train_path='test/'
 
-save_path='~/save_data/'
+save_path='./save_data/'
 model_path='models/'
 denoise_path='denoised/'
 
