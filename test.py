@@ -41,8 +41,6 @@ def test():
         io.imsave(os.path.join(result_dir, f'{fname}-ground_truth.png'),img_truth)
 
 def main():
-
-
     test()
 
 

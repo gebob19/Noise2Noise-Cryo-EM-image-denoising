@@ -87,7 +87,7 @@ class Testinging_Dataset(Dataset):
         h,w,c = img.shape
 
         std = self.noise_param
-        noise = np.random.normal(0,std,(h,w,c))
+        noise = np.random.normal(0, std, (h,w,c))
         noise_img_temp = img + noise
         noise_img = np.clip(noise_img_temp, 0, 255).astype(np.uint8)
         return noise_img
