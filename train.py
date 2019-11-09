@@ -26,7 +26,7 @@ def train():
     dataset = Training_Dataset(conf.data_path_train,conf.gaussian_noise_param,conf.crop_img_size)
     dataset_length = len(dataset)
     train_loader = DataLoader(dataset, batch_size=4, shuffle=True,num_workers=4)
-    model = UNet(in_channels =conf.img_channel,out_channels=conf.img_channel)
+    model = UNet(in_channels=conf.img_channel,out_channels=conf.img_channel)
     criterion = nn.MSELoss()
     model = model.to(device)
     optim = Adam(model.parameters(), lr = conf.learning_rate, betas=(0.9, 0.999), eps=1e-8, weight_decay=0, amsgrad=True)
